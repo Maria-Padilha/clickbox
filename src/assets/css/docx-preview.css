@@ -1,0 +1,36 @@
+/* CSS mínimo para docx-preview (páginas e layout) */
+.docx {
+    color: #000;
+    line-height: 1.25;
+}
+.docx-wrapper {
+    margin: 0 auto;
+    position: relative;
+}
+.docx-page {
+    background: #fff;
+    position: relative;
+}
+.docx-page > section {
+    box-sizing: border-box;
+}
+
+/* Tabelas básicas do Word */
+.docx table { border-collapse: collapse; }
+.docx td, .docx th {
+    border-color: #000;
+    border-style: solid;
+    vertical-align: top;
+}
+
+/* Quebra de página visual (caso lib crie classes) */
+.docx .page-break { page-break-before: always; }
+
+/* Imagens responsivas */
+.docx img { max-width: 100%; height: auto; display: block; }
+
+/* Listas */
+.docx ul, .docx ol { margin: 0 0 0 24px; padding: 0; }
+
+/* Cabeçalhos/rodapés (quando existentes) */
+.docx header, .docx footer { position: relative; }
