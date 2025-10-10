@@ -1,1 +1,86 @@
 @import "tailwindcss";
+
+:root {
+    --color-primary: #fcfcfc;
+    --color-secondary: #E9E9E9;]
+
+    --color-orange-medium: #fd8839;
+    --color-orange: #fd9836;
+    --color-orange-opacity: #fff7ed;
+
+    --color-card: #E4E4E4;
+
+    --text-primary: #121212;
+}
+
+.dark {
+    --color-primary: #121212;
+    --color-secondary: #282828;
+
+    --color-orange-medium: #f5903f;
+    --color-orange: #ffaf65;
+    --color-orange-opacity: rgba(152, 123, 81, 0.55);
+
+    --color-card: #393939;
+
+    --text-primary: #F1F1F1;
+}
+
+.texto-color-laranja{
+    color: var(--color-orange) !important;
+}
+
+.texto-secondary {
+    color: var(--color-secondary) !important;
+}
+
+/* ================= BACKGROUNDS =================== */
+
+.background-primary {
+    background-color: var(--color-primary) !important;
+}
+
+.background-card {
+    background-color: var(--color-card) !important;
+}
+
+.background-laranja {
+    background-color: var(--color-orange-medium) !important;
+}
+
+.background-laranja-opacity {
+    background-color: var(--color-orange-opacity) !important;
+}
+
+/* ============ CSS PADRÃO ============= */
+body {
+    font-family: 'CodecPro', sans-serif !important;
+}
+
+@font-face {
+    font-family: 'CodecPro';
+    src: url('../../../public/fonts/CodecPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CodecPro';
+    src: url('../../../public/fonts/CodecPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CodecPro';
+    src: url('../../../public/fonts/CodecPro-Regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'uni-neue';
+    src: url('../../../public/fonts/CodecPro-ExtraBold.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}

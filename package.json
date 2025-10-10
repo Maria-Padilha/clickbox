@@ -8,18 +8,23 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@devindex/vue-mask": "^2.0.3",
     "@mdi/font": "5.9.55",
     "core-js": "^3.8.3",
     "docx-preview": "^0.3.6",
-    "docxtemplater": "^3.66.2",
+    "docxtemplater": "^3.66.7",
     "file-saver": "^2.0.5",
     "mammoth": "^1.10.0",
+    "pinia": "^3.0.3",
+    "pinia-plugin-persistedstate": "^4.5.0",
     "pizzip": "^3.2.0",
     "roboto-fontface": "*",
     "vue": "^3.2.13",
+    "vue-3-mask": "^0.0.1-alpha",
     "vue-router": "^4.0.3",
     "vuetify": "^3.0.0-beta.0",
-    "webfontloader": "^1.0.0"
+    "webfontloader": "^1.0.0",
+    "webpack": "^5.102.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
