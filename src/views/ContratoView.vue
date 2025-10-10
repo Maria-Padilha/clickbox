@@ -66,7 +66,7 @@
       <!-- QUADRO RESUMO / EVENTO -->
       <v-card elevation="0" rounded="0" color="transparent">
         <v-card-title @click="toggleEvento = !toggleEvento"
-                      class="py-2 d-flex align-center gap-3 flex-column justify-center mb-3 background-card">
+                      class="py-2 d-flex align-center gap-3 cursor-pointer flex-column justify-center mb-3 background-card">
           <v-btn icon="mdi-party-popper" size="large" variant="tonal" density="comfortable" color="var(--color-orange)"/>
 
           <div class="flex items-center gap-2" style="cursor: pointer;">
@@ -123,7 +123,7 @@
       <!-- MONTAGEM / DESMONTAGEM -->
       <v-card elevation="0" rounded="0" color="transparent">
         <v-card-title @click="toggleMontagem = !toggleMontagem"
-                      class="py-2 d-flex align-center gap-3 flex-column justify-center mb-3 background-card">
+                      class="py-2 d-flex align-center gap-3 cursor-pointer flex-column justify-center mb-3 background-card">
           <v-btn icon="mdi-car" size="large" variant="tonal" density="comfortable" color="var(--color-orange)"/>
 
           <div class="flex items-center gap-2 flex-wrap justify-center" style="cursor: pointer;">
@@ -155,7 +155,7 @@
       <!-- ASSINATURA / RODAPÉ -->
       <v-card elevation="0" rounded="0" color="transparent">
         <v-card-title @click="toggleAssinatura = !toggleAssinatura"
-                      class="py-2 d-flex align-center gap-3 flex-column justify-center mb-3 background-card">
+                      class="py-2 d-flex align-center gap-3 cursor-pointer flex-column justify-center mb-3 background-card">
           <v-btn icon="mdi-file-edit" size="large" variant="tonal" density="comfortable" color="var(--color-orange)"/>
 
           <div class="flex items-center gap-2 flex-wrap justify-center" style="cursor: pointer;">
@@ -221,8 +221,8 @@
       <div ref="previewEl" class="preview-inner" :style="{'--zoom': zoom}"></div>
     </div>
 
-    <v-alert v-else type="info" color="var(--color-orange-medium)" variant="tonal">
-      Clique em 'Carregar Contrato' para visualizar.
+    <v-alert v-else type="info" color="var(--color-secondary)" variant="flat" class="mt-10 text-white">
+      Clique em <span class="font-bold">Carregar Contrato</span> para visualizar
     </v-alert>
   </main>
 </template>
@@ -243,7 +243,7 @@ const toggleContratante = ref(true);
 const toggleEvento = ref(false);
 const toggleMontagem = ref(false);
 const toggleAssinatura = ref(false);
-
+0
 
 /** Estados do menu lateral redimensionável */
 const menu = ref(true);
