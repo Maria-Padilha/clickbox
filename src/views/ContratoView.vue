@@ -20,7 +20,7 @@
       <v-card elevation="0" rounded="0" color="transparent">
         <v-card-title
             @click="toggleContratante = !toggleContratante"
-            class="py-2 d-flex cursor-pointer align-center gap-3 flex-column justify-center mb-3 background-laranja-opacity"
+            class="py-2 d-flex cursor-pointer align-center gap-3 flex-column justify-center mb-3 background-card"
         >
           <v-btn icon="mdi-file-outline" size="large" variant="tonal" density="comfortable" color="var(--color-orange)"/>
 
@@ -66,7 +66,7 @@
       <!-- QUADRO RESUMO / EVENTO -->
       <v-card elevation="0" rounded="0" color="transparent">
         <v-card-title @click="toggleEvento = !toggleEvento"
-                      class="py-2 d-flex align-center gap-3 flex-column justify-center mb-3 background-laranja-opacity">
+                      class="py-2 d-flex align-center gap-3 flex-column justify-center mb-3 background-card">
           <v-btn icon="mdi-party-popper" size="large" variant="tonal" density="comfortable" color="var(--color-orange)"/>
 
           <div class="flex items-center gap-2" style="cursor: pointer;">
@@ -123,7 +123,7 @@
       <!-- MONTAGEM / DESMONTAGEM -->
       <v-card elevation="0" rounded="0" color="transparent">
         <v-card-title @click="toggleMontagem = !toggleMontagem"
-                      class="py-2 d-flex align-center gap-3 flex-column justify-center mb-3 background-laranja-opacity">
+                      class="py-2 d-flex align-center gap-3 flex-column justify-center mb-3 background-card">
           <v-btn icon="mdi-car" size="large" variant="tonal" density="comfortable" color="var(--color-orange)"/>
 
           <div class="flex items-center gap-2 flex-wrap justify-center" style="cursor: pointer;">
@@ -155,7 +155,7 @@
       <!-- ASSINATURA / RODAPÉ -->
       <v-card elevation="0" rounded="0" color="transparent">
         <v-card-title @click="toggleAssinatura = !toggleAssinatura"
-                      class="py-2 d-flex align-center gap-3 flex-column justify-center mb-3 background-laranja-opacity">
+                      class="py-2 d-flex align-center gap-3 flex-column justify-center mb-3 background-card">
           <v-btn icon="mdi-file-edit" size="large" variant="tonal" density="comfortable" color="var(--color-orange)"/>
 
           <div class="flex items-center gap-2 flex-wrap justify-center" style="cursor: pointer;">
