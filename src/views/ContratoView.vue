@@ -335,6 +335,13 @@ const descontoEventoBRL = computed(() => {
   return new Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(n)
 })
 
+/** Formatação de data */
+function formatDate(dateString) {
+  if (!dateString) return ''
+  const [ano, mes, dia] = dateString.split('-')
+  return `${dia}/${mes}/${ano}`
+}
+
 
 /** Preenche os dados no template */
 function setTemplateData(doc) {
@@ -355,7 +362,7 @@ function setTemplateData(doc) {
     // QUADRO RESUMO / EVENTO
     equipamento: form.value.equipamento,
     evento: form.value.evento,
-    data_evento: form.value.data_evento,
+    data_evento: formatDate(form.value.data_evento),
     inicio_evento: form.value.inicio_evento,
     termino_evento: form.value.termino_evento,
     qtd_horas_evento: form.value.qtd_horas_evento,
@@ -369,13 +376,13 @@ function setTemplateData(doc) {
     publicar_nao: !form.value.autorizacao_publicacao ? 'X' : '',
 
     // MONTAGEM / DESMONTAGEM
-    data_montagem: form.value.data_montagem,
+    data_montagem: formatDate(form.value.data_montagem),
     inicio_montagem: form.value.inicio_montagem,
-    data_desmontagem: form.value.data_desmontagem,
+    data_desmontagem: formatDate(form.value.data_desmontagem),
     inicio_desmontagem: form.value.inicio_desmontagem,
 
     // ASSINATURA
-    data_contrato: form.value.data_contrato,
+    data_contrato: formatDate(form.value.data_contrato),
   })
 }
 
