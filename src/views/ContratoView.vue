@@ -36,7 +36,7 @@
         <v-expand-transition>
           <v-card-text v-if="toggleContratante" class="flex flex-col gap-4">
             <v-text-field v-bind="fProps" label="Nome" v-model="form.nome"/>
-            <v-text-field v-bind="fProps" label="CPF" v-model="form.cpf" v-mask-cpf />
+            <v-text-field v-bind="fProps" label="CPF / CNPJ" v-model="form.cpf" />
 
 
             <v-text-field v-bind="fProps" label="CEP" v-model="form.cep" v-mask-cep/>
@@ -81,7 +81,7 @@
         <v-expand-transition>
           <v-card-text v-if="toggleEvento" class="flex flex-col gap-4">
             <v-select
-                v-bind="fProps" label="Equipamento" v-model="form.equipamento"
+                v-bind="fProps" label="Equipamento" v-model="form.equipamento" multiple
                 :items="['Plataforma 360', 'Totem Fotográfico', 'Espelho Retrô', 'Cabine Fotográfica', 'Ixpia a Foto']"
             />
             <v-text-field v-bind="fProps" label="Tipo de Evento" v-model="form.evento"/>
