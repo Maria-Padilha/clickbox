@@ -310,7 +310,7 @@ const scrollHandler = ref(null)
 
 /** Carrega o modelo .docx do servidor */
 async function carregarModelo() {
-  const resp = await fetch('/modelo-contrato-3.docx')
+  const resp = await fetch('/modelo-contrato-2.docx')
   if (!resp.ok) throw new Error('Não foi possível carregar o modelo')
   arrayBufferModelo.value = await resp.arrayBuffer()
 }
